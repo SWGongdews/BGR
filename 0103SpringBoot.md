@@ -7,8 +7,7 @@
 # 프로젝트 코드
 
 [GitHub - softwarerbfl/firstproject](https://github.com/softwarerbfl/firstproject)
-
-![캡처.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%EC%BA%A1%EC%B2%98.png)
+![캡처 PNG (1)](https://user-images.githubusercontent.com/77094833/147883560-7c19bb83-e1a5-42c7-938f-775230ae4f53.png)
 
 main 폴더는 java 폴더와 resources폴더로 나누어진다.
 

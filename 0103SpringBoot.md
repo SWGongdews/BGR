@@ -7,6 +7,7 @@
 # 프로젝트 코드
 
 [GitHub - softwarerbfl/firstproject](https://github.com/softwarerbfl/firstproject)
+
 ![캡처 PNG (1)](https://user-images.githubusercontent.com/77094833/147883560-7c19bb83-e1a5-42c7-938f-775230ae4f53.png)
 
 main 폴더는 java 폴더와 resources폴더로 나누어진다.
@@ -41,7 +42,7 @@ main 폴더는 java 폴더와 resources폴더로 나누어진다.
 
 # MVC모델
 
-![캡처.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%EC%BA%A1%EC%B2%98%201.png)
+![캡처 PNG (2)](https://user-images.githubusercontent.com/77094833/147883600-6891e775-ae7a-4094-9f93-56f5e64cd7d1.png)
 
 ## View
 
@@ -54,7 +55,7 @@ main 폴더는 java 폴더와 resources폴더로 나누어진다.
 - Thymeleaf
 - **Mustache** → Mustache 플러그인 설치
 
-![캡처.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%EC%BA%A1%EC%B2%98%202.png)
+![캡처 PNG (3)](https://user-images.githubusercontent.com/77094833/147883616-b98b55d9-0a25-40f1-a2ff-06727df72ada.png)
 
 <aside>
 💡 콘트롤러 클래스 내부에 `newArticleForm`이라는 메소드가 존재하는데, 이 메소드의 경우 `@GetMapping`이라는 annotation을 사용하여 local:8080/articles/new라는 url주소로 접속했을 때, 프로젝트 파일 내부에서 src/main/resources/templates/**articles/new.mustache**을 보여준다.  여기서 return해주어야하는 주소 부분은 `articles/new`이다. 즉 templates의 하위 주소.
@@ -85,9 +86,9 @@ DB에서 데이터를 얻어 Service나 Controller등으로 보낼 때 사용하
 
 `toEntity()`메소드를 통해서 DTO에서 필요한 부분을 이용해 Entity로 만든다.
 
-![폼에서 입력받아 db에 저장되는 과정.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%ED%8F%BC%EC%97%90%EC%84%9C_%EC%9E%85%EB%A0%A5%EB%B0%9B%EC%95%84_db%EC%97%90_%EC%A0%80%EC%9E%A5%EB%90%98%EB%8A%94_%EA%B3%BC%EC%A0%95.png)
+![폼에서 입력받아 db에 저장되는 과정](https://user-images.githubusercontent.com/77094833/147883624-631a5d73-201f-4ce2-bb88-764be5778cad.PNG)
 
-![캡처.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%EC%BA%A1%EC%B2%98%203.png)
+![캡처](https://user-images.githubusercontent.com/77094833/147883638-1f60f25d-7f7a-4f6e-bbf2-02fd1c969131.PNG)
 
 # Entity → Article객체 생성
 
@@ -101,7 +102,7 @@ DB에서 데이터를 얻어 Service나 Controller등으로 보낼 때 사용하
 - `@NoArgsContructor` : 파라미터가 아예 없는 기본 생성자를 자동으로 생성해준다.
 - `@ToString` : 해당 클래스에 선언된 필드들을 모두 출력할 수 있는 toString메소드를 자동으로 생성해준다.
 
-![캡처.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%EC%BA%A1%EC%B2%98%204.png)
+![캡처 PNG (4)](https://user-images.githubusercontent.com/77094833/147883655-a5abcc2d-0acc-42d6-bf63-a70da1bb51a5.png)
 
 # Repository → 인터페이스
 
@@ -109,7 +110,7 @@ DB에서 데이터를 얻어 Service나 Controller등으로 보낼 때 사용하
 
 아래의 경우 `CrudRepository`를 상속받아 데이터 베이스에 어떤 값을 넣거나, 조회하거나 삭제(Create, Update, Read, Delete)할 수 있게 됩니다. 이 때 뒤에 <Article, Long>이 의미하는 것은 `**<대상으로 지정할 Entity, 해당 Entity의 PK타입>**`을 의미합니다.
 
-![캡처.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/%EC%BA%A1%EC%B2%98%205.png)
+![캡처 PNG (5)](https://user-images.githubusercontent.com/77094833/147883669-e3a219c2-48ea-4ab6-b32d-4d107e382b22.png)
 
 - 실제로 DB에 접근하는 객체
 - Service와 DB를 연결하는 고리
@@ -119,18 +120,18 @@ DB에서 데이터를 얻어 Service나 Controller등으로 보낼 때 사용하
 
 ## controller 파일 refactoring
 
-![controller 리팩토링 전.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/controller_%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81_%EC%A0%84.png)
+![controller 리팩토링 전](https://user-images.githubusercontent.com/77094833/147883679-33d7535d-7ee4-4273-861d-c1e2cad0a224.PNG)
 
-![controller 리팩토링 후.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/controller_%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81_%ED%9B%84.png)
+![controller 리팩토링 후](https://user-images.githubusercontent.com/77094833/147883684-ef182418-9c7c-48b5-828c-d3b286d45fb6.PNG)
 
 ## dto 파일 refactoring
 
-![dto리팩토링 전.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/dto%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81_%EC%A0%84.png)
+![dto리팩토링 전](https://user-images.githubusercontent.com/77094833/147883690-acba6597-15b0-4d9a-9f01-fe6f79920f9b.PNG)
 
-![dto리팩토링 후.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/dto%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81_%ED%9B%84.png)
+![dto리팩토링 후](https://user-images.githubusercontent.com/77094833/147883693-b7c82aa7-ea32-4f1d-bc35-76005d8dd43e.PNG)
 
 ## entity 파일 refactoring
 
-![entity 리팩토링 전.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/entity_%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81_%EC%A0%84.png)
+![entity 리팩토링 전](https://user-images.githubusercontent.com/77094833/147883697-e6719abc-8a72-43e1-aa64-49bb49239fae.PNG)
 
-![entity 리팩토링 후.PNG](Spring%20Boot%201b092945d0744d29a53938fb5458cd6f/entity_%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81_%ED%9B%84.png)
+![entity 리팩토링 후](https://user-images.githubusercontent.com/77094833/147883702-a63e0442-001a-4f94-9077-a86aab61162c.PNG)

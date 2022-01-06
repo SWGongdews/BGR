@@ -8,7 +8,7 @@
 2. 가져온 데이터를 모델에 등록 (`addAttribute()`사용)
 3. 보여줄 페이지 설정(return할 페이지)
 
-![데이터 목록 조회 PNG](https://user-images.githubusercontent.com/77094833/148405380-23ca0ece-c32e-48b2-81cb-7565d03affb6.png)
+![id로 조회 PNG](https://user-images.githubusercontent.com/77094833/148405484-42d2e28f-3d54-4e6c-854b-c88cf39ac7f9.png)
 
 <aside>
 💡 `orElse(null)`는 id를 못찾았을 때의 예외처리

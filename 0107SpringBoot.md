@@ -2,7 +2,7 @@
 
 # 데이터 조회하기 with JPA
 
-![데이터 조회.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%A1%B0%ED%9A%8C.png)
+![데이터 조회](https://user-images.githubusercontent.com/77094833/148404980-d7aa593c-75cb-40ac-98f8-926538028442.PNG)
 
 1. `findById()` 를 사용하여 id로 데이터를 가져온다
 2. 가져온 데이터를 모델에 등록 (`addAttribute()`사용)
@@ -47,13 +47,13 @@ articles/show.mustache파일은 아래와 같다.
 
 # 데이터 목록조회
 
-![데이터 목록.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%AA%A9%EB%A1%9D.png)
+![데이터 목록](https://user-images.githubusercontent.com/77094833/148405038-95e029d5-2f5f-4ff2-b37b-9a97ab629e47.PNG)
 
 1. `findAll()`을 사용하여 모든 Article을 가져온다.
 2. 가져온 Article묶음을 view로 전달(`addAttribute()`사용)
 3. view 페이지 설정(return할 페이지)
 
-![데이터 목록 조회.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%AA%A9%EB%A1%9D_%EC%A1%B0%ED%9A%8C.png)
+![데이터 목록 조회](https://user-images.githubusercontent.com/77094833/148405086-79f7fc03-b3fa-4230-9f81-9bbff067e500.PNG)
 
 articles/index.mustache파일은 아래와 같다.
 
@@ -106,17 +106,18 @@ articles/index.mustache파일은 아래와 같다.
 
 ## 링크
 
-![링크 예시.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EB%A7%81%ED%81%AC_%EC%98%88%EC%8B%9C.png)
+![링크 예시](https://user-images.githubusercontent.com/77094833/148405135-9ea85664-50aa-4719-b57d-5615d92e74b1.PNG)
+
 
 아래와 같이 index.mustache파일 즉 데이터 목록 페이지에서 새로운 Article을 생성할 수 있는 페이지로 이동할 수 있는 버튼을 만들 수 있으며 결과는 아래와 같다.
 
-![결과.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EA%B2%B0%EA%B3%BC.png)
+![결과](https://user-images.githubusercontent.com/77094833/148405157-787d686e-2340-495c-8458-fcbf1ffd435c.PNG)
 
 ## 리다이렉트
 
-![리다이렉트.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8.png)
+![리다이렉트](https://user-images.githubusercontent.com/77094833/148405183-676baf63-d814-4cf1-b23f-7202f891b83b.PNG)
 
-![리다이렉트 코드.PNG](Spring%20Boot%2011-13%20d6cf5ecc63bf48b3b844aa5c0570d9bf/%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8_%EC%BD%94%EB%93%9C.png)
+![리다이렉트 코드](https://user-images.githubusercontent.com/77094833/148405205-d1903161-8dcb-4a42-ade0-b8a9c92100a7.PNG)
 
 → articles/create 페이지가 열렸을 때, articles/id번호 페이지로 이동시켜준다. 이 프로젝트에서는 submit버튼을 누르면 입력한 페이지의 id번호 페이지로 이동
 

@@ -33,7 +33,7 @@ INSERT INTO ARTICLE(id, title, content) values(3,'다다다다','3333');
 2. 모델에 데이터를 등록한다
 3. 뷰 페이지를 설정한다
 
-![edit버튼을 눌렀을 때 페이지](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/edit_%ED%8E%98%EC%9D%B4%EC%A7%80.png)
+![edit 페이지 PNG](https://user-images.githubusercontent.com/77094833/148696402-758811c5-af42-4112-919e-40847de86cf5.png)
 
 edit버튼을 눌렀을 때 페이지
 
@@ -104,20 +104,20 @@ articleRepository내부에 `save()`라는 메소드를 사용하여 DB에 엔티
 2. 엔티티를 DTO로 저장
     1. DB에서 기존 데이터를 가져옴
         
-        ![수정하기 전](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/%EC%88%98%EC%A0%95_%EC%A0%84.png)
-        
+        ![수정 전](https://user-images.githubusercontent.com/77094833/148696422-d47a1225-8c46-48ff-94d0-52a30c53352f.PNG)
+
         수정하기 전
         
     2. 기존 데이터에 값을 갱신
         
-        ![제목 변경](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/%EC%88%98%EC%A0%95_%ED%9B%84.png)
-        
+        ![수정 후](https://user-images.githubusercontent.com/77094833/148696439-91643981-740e-4780-9168-95bed5c7a58b.PNG)
+
         제목 변경
         
 3. 수정 결과 페이지(**articles/id)**로 REDIRECT
     
-    ![Submit버튼 클릭하여 redirect까지 성공](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/submit%EA%B9%8C%EC%A7%80.png)
-    
+    ![submit까지](https://user-images.githubusercontent.com/77094833/148696467-b9607fe4-0850-4e04-ac4f-2f71898a7ecd.PNG)
+
     Submit버튼 클릭하여 redirect까지 성공
     
 
@@ -154,13 +154,13 @@ articleRepository내부에 `save()`라는 메소드를 사용하여 DB에 엔티
 
 1. 삭제 대상을 가져온다
     
-    ![삭제전.PNG](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/%EC%82%AD%EC%A0%9C%EC%A0%84.png)
-    
+    ![삭제전](https://user-images.githubusercontent.com/77094833/148696478-70c50645-5858-4df4-94c3-1d2bbd3e424b.PNG)
+
 2. 대상을 삭제한다
 3. 결과 페이지로 REDIRECT한다
     
-    ![삭제후.PNG](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/%EC%82%AD%EC%A0%9C%ED%9B%84.png)
-    
+    ![삭제후](https://user-images.githubusercontent.com/77094833/148696482-51d93e10-d321-4dc7-9a9c-d63bc0c18da1.PNG)
+
 
 → msg는 alert태그
 

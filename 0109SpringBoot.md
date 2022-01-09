@@ -10,7 +10,8 @@ INSERT INTO ARTICLE(id, title, content) values(3,'다다다다','3333');
 
 # 수정 폼 만들기
 
-![SmartSelect_20220110-031051_Drive.jpg](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/SmartSelect_20220110-031051_Drive.jpg)
+![SmartSelect_20220110-031051_Drive](https://user-images.githubusercontent.com/77094833/148696562-063fa8a9-1854-4b02-b590-5586d7395b17.jpg)
+
 
 ```java
 @GetMapping("/articles/{**id**}/edit")
@@ -69,7 +70,8 @@ edit버튼을 눌렀을 때 페이지
 
 # 데이터 수정하기
 
-![SmartSelect_20220110-032419_Drive.jpg](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/SmartSelect_20220110-032419_Drive.jpg)
+![SmartSelect_20220110-032419_Drive](https://user-images.githubusercontent.com/77094833/148696571-e4a69e67-4782-4428-b536-9e5f0739c413.jpg)
+
 
 ```java
 @PostMapping("/articles/update")
@@ -123,7 +125,7 @@ articleRepository내부에 `save()`라는 메소드를 사용하여 DB에 엔티
 
 # 데이터 삭제하기
 
-![SmartSelect_20220110-033914_Drive.jpg](Spring%20Boot%2014-16%20126f7567e91a4174b808f95ba610b505/SmartSelect_20220110-033914_Drive.jpg)
+![SmartSelect_20220110-033914_Drive](https://user-images.githubusercontent.com/77094833/148696592-bb93fc02-b59a-4f9b-ae7b-df2069afca9b.jpg)
 
 ```java
 @GetMapping("/articles/{id}/delete")

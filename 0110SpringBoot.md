@@ -78,7 +78,7 @@ create table article (
 2022-01-10 17:54:32.610  INFO 15308 --- [nio-8080-exec-5] c.e.f.controller.ArticleController       : id = 4
 ```
 
-![새로운 레코드 추가.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/%EC%83%88%EB%A1%9C%EC%9A%B4_%EB%A0%88%EC%BD%94%EB%93%9C_%EC%B6%94%EA%B0%80.png)
+![새로운 레코드 추가 PNG](https://user-images.githubusercontent.com/77094833/148784110-1647499f-fae7-42c0-9765-f75e9151decd.png)
 
 ## UPDATE
 
@@ -98,7 +98,7 @@ ARTICLE의 정보를 수정하였을 때 아래와 같은 알림을 준다.
 2022-01-10 17:57:26.115  INFO 15308 --- [nio-8080-exec-1] c.e.f.controller.ArticleController       : id = 4
 ```
 
-![UPDATE.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/UPDATE.png)
+![UPDATE PNG](https://user-images.githubusercontent.com/77094833/148784153-38c2ad1b-0035-4ddc-83aa-a019ff63346c.png)
 
 ## DELETE
 
@@ -115,7 +115,7 @@ ARTICLE의 정보를 수정하였을 때 아래와 같은 알림을 준다.
         id=?
 ```
 
-![DELETE.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/DELETE.png)
+![DELETE PNG](https://user-images.githubusercontent.com/77094833/148784179-327c8a75-4fe0-4a0b-be58-84adde715b99.png)
 
 # RestAPI와 JSON
 
@@ -125,41 +125,41 @@ API테스트는 Talend API Tester(크롬 확장 프로그램)에서 진행
 
 ## GET
 
-![GET요청 성공 → 200](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/get%EC%9A%94%EC%B2%AD_%EC%84%B1%EA%B3%B5_200.png)
+![get요청 성공 200 PNG](https://user-images.githubusercontent.com/77094833/148784210-30c1c556-4adf-4d88-9353-a69cb8c140dc.png)
 
 GET요청 성공 → 200
 
-![GET요청 실패 → 404](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/get%EC%9A%94%EC%B2%AD_%EC%8B%A4%ED%8C%A8_404.png)
+![get요청 실패 404 PNG](https://user-images.githubusercontent.com/77094833/148784236-8a309832-767b-4010-8024-3b119544914d.png)
 
 GET요청 실패 → 404
 
 ## POST
 
-![POST요청 성공 → 201](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/post%EC%9A%94%EC%B2%AD_%EC%84%B1%EA%B3%B5201.png)
+![post요청 성공201 PNG](https://user-images.githubusercontent.com/77094833/148784249-908b976f-74c3-4649-9d6f-ae173ac51209.png)
 
 POST요청 성공 → 201
 
-![POST요청 실패 → 500](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/post%EC%9A%94%EC%B2%AD_%EC%8B%A4%ED%8C%A8_500.png)
+![post요청 실패 500 PNG](https://user-images.githubusercontent.com/77094833/148784270-5b7127ad-73b1-4ee4-93ce-a3ab4c2cdfcd.png)
 
 POST요청 실패 → 500
 
 ## PATCH
 
-![PATCH(UPDATE) 성공 → 200](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/patch%EC%84%B1%EA%B3%B5_200.png)
+![patch성공 200 PNG](https://user-images.githubusercontent.com/77094833/148784298-f48939ea-6b6a-46b1-b8fe-27eeea02aef8.png)
 
 PATCH(UPDATE) 성공 → 200
 
 ## DELETE
 
-![DELETE성공 → 200](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/delete_%EC%84%B1%EA%B3%B5_200.png)
+![delete 성공 200 PNG](https://user-images.githubusercontent.com/77094833/148784322-39f5c978-0c92-41bc-882a-754a362cf804.png)
 
 DELETE성공 → 200
 
 # HTTP와 RestController
 
-![서버와 클라이언트의 소통 구조.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/%EC%84%9C%EB%B2%84%EC%99%80_%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8%EC%9D%98_%EC%86%8C%ED%86%B5_%EA%B5%AC%EC%A1%B0.png)
+![서버와 클라이언트의 소통 구조 PNG](https://user-images.githubusercontent.com/77094833/148784362-1629a477-347b-4454-99e9-e56fa70a63b7.png)
 
-![http.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/http.png)
+![http PNG](https://user-images.githubusercontent.com/77094833/148784383-b123ba53-8f79-4f2f-96e3-ebb8f43c6446.png)
 
 ## GET
 
@@ -176,7 +176,7 @@ DELETE성공 → 200
 
 → 해당 API에 요청했을 경우, 아래와 같이 JSON을 RETURN한다.
 
-![GET JSON.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/GET_JSON.png)
+![GET JSON PNG](https://user-images.githubusercontent.com/77094833/148784415-db5e3d03-d415-4b68-a0a6-90c260704ecc.png)
 
 ## POST
 
@@ -190,7 +190,7 @@ DELETE성공 → 200
 
 → 해당 API에 요청했을 경우, 아래와 같이 새로 데이터가 추가되며 JSON을 RETURN한다.
 
-![POST JSON.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/POST_JSON.png)
+![POST JSON PNG](https://user-images.githubusercontent.com/77094833/148784435-491dbf0d-a5c0-48d2-a583-b3db6165cf58.png)
 
 ## PATCH
 
@@ -220,7 +220,7 @@ DELETE성공 → 200
 
 → 해당 API를 요청하고 아래와 같이 변경하고 싶은 정보를 입력하면 UPDATE되며 JSON을 RETURN한다.
 
-![PATCH JSON.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/PATCH_JSON.png)
+![PATCH JSON PNG](https://user-images.githubusercontent.com/77094833/148784462-25e3e1e0-5b6f-4fe1-b6e5-33183828da53.png)
 
 ## DELETE
 
@@ -242,4 +242,4 @@ DELETE성공 → 200
 
 → 해당 API를 요청할 경우, 데이터가 DB에서 삭제되고 상태(STATUS)만을 RETURN한다.
 
-![DELETE JSON.PNG](Spring%20Boot%2017-20%206c9b5f7139dc4274864322310f8cf497/DELETE_JSON.png)
+![DELETE JSON PNG](https://user-images.githubusercontent.com/77094833/148784480-3c5d3023-25b2-47e7-ab08-5c19b2e021bf.png)
